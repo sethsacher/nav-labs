@@ -1,0 +1,167 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{
+    display:block
+}
+div#main{
+    padding:0;
+    min-width:952px
+}
+header#main-header.transparent{
+    position:absolute;
+    left:0;
+    right:0;
+    z-index:2;
+    -webkit-font-smoothing:antialiased
+}
+header#main-header.transparent .inner-col{
+    border-bottom:1px solid hsla(0,0%,100%,.05)!important
+}
+.globalNav .colorize{
+    color:hsla(0,0%,100%,.5)
+}
+.globalNav .colorize.active,.globalNav .colorize:hover{
+    color:#fff
+}
+#checkout,#checkout main *{
+    margin:0;
+    padding:0;
+    border:none
+}
+body#checkout{
+    background:#fff
+}
+body#checkout #main-header .inner-col{
+    border-bottom:none
+}
+body#checkout:not(.chrome) div#main{
+    opacity:0
+}
+body#checkout.ready:not(.chrome) div#main{
+    transition:opacity 1.5s cubic-bezier(.165,.84,.44,1)
+}
+body#checkout.loaded:not(.chrome) div#main{
+    opacity:1
+}
+body#checkout main{
+    font-size:14px;
+    -webkit-font-smoothing:antialiased
+}
+body#checkout main .content{
+    position:relative;
+    width:952px;
+    margin:0 auto
+}
+body#checkout main h1,body#checkout main h2,body#checkout main p{
+    font-size:1em;
+    line-height:normal;
+    margin:0;
+    color:#000
+}
+body#checkout main h1{
+    font-weight:400
+}
+body#checkout main button{
+    outline:none;
+    -webkit-tap-highlight-color:transparent
+}
+body#checkout.chrome #intro{
+    background:none
+}
+body#checkout.chrome #intro .content{
+    z-index:1
+}
+body#checkout.chrome #intro canvas{
+    display:block;
+    min-height:100%
+}
+body#checkout.android #intro,body#checkout.iOS #intro{
+    height:660px
+}
+body#checkout #intro{
+    position:relative;
+    overflow:hidden;
+    background:#1d2b64;
+    background:radial-gradient(circle farthest-side at right bottom,#fefdfe 5%,#f8cdda 25%,#1d2b64 80%,#0e153a 98%);
+    height:100vh;
+    min-height:660px
+}
+body#checkout #intro:after,body#checkout #intro:before{
+    content:"";
+    position:absolute;
+    width:100%;
+    z-index:3
+}
+body#checkout #intro:after{
+    height:2px;
+    bottom:0;
+    background:linear-gradient(rgba(14,21,58,0),rgba(14,21,58,.1))
+}
+body#checkout #intro .content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-306px;
+    margin-left:-476px
+}
+body#checkout #intro.goToSlide3 .content{
+    z-index:3
+}
+body#checkout.ready #intro .content{
+    transition:opacity .5s ease-in-out
+}
+body#checkout #intro .content.hidden{
+    opacity:0
+}
+body#checkout #intro [id^=slide] :not(strong){
+    position:absolute
+}
+body#checkout #intro [id^=slide]>h1,body#checkout #intro [id^=slide]>p{
+    text-shadow:0 1px 1px rgba(14,21,58,.2)
+}
+body#checkout #intro [id^=slide] .pay-button.desktop{
+    width:228px;
+    height:38px;
+    left:36px;
+    background:url("../../../img/checkout/marketing/header-animation/pay-button.png")
+}
+body#checkout #intro [id^=slide] .pay-button.desktop.paid{
+    background-position:0 100%
+}
+body#checkout #intro [id^=slide] .desktop.tick{
+    width:20px;
+    height:21px;
+    left:50%;
+    margin-left:-10px;
+    background:url("../../../img/checkout/marketing/header-animation/tick.svg")
+}
+body#checkout #intro #slide0~section{
+    pointer-events:none
+}
+body#checkout #intro h1{
+    font-size:30px;
+    color:#fff;
+    letter-spacing:-1px
+}
+body#checkout #intro div.close.inner-col{
+    margin:0 auto!important;
+    position:relative
+}
+body#checkout #intro #close-button{
+    position:absolute;
+    top:63px;
+    right:1px;
+    width:21px;
+    height:21px;
+    background:url("../../../img/checkout/marketing/close.png");
+    background-size:100% 100%;
+    z-index:1;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .4s ease-in-out
+}
+body#checkout #intro #close-button.visible{
+    opacity:1;
+    pointer-events:auto
+}
+body#checkout #intro #close-button.visible:active{
+    opacity:1
+}
