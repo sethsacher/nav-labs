@@ -14,11 +14,11 @@
     $('#pagepiling').pagepiling({
         direction: 'horizontal',
         menu: '#menu',
-        anchors: ['page1', 'page2', 'page3', 'page5', 'page6', 'page7'],
-        sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff'],
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+        sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff'],
         navigation: {
             'position': 'right',
-            'tooltips': ['Home', 'About', 'Feature', 'Testimonial', 'Downloads', 'Contact Us']
+            'tooltips': ['Home', 'About', 'Delivery', 'Leadership', 'Testimonials', 'Downloads', 'Contact Us']
         },
         afterRender: function(){
             $('#pp-nav').addClass('custom');
