@@ -36,7 +36,7 @@
 	Screenshot Carousel Active
 =========================================================================*/
 $('#app_carousel').owlCarousel({
-        loop:true,
+        loop:false, /* Was originally loop:true */
         margin: 20,
         autoplay: false,
         responsiveClass:true,
@@ -66,8 +66,8 @@ $('#app_carousel').owlCarousel({
 =========================================================================*/
     var testiSelector = $('#testimonial_carousel');
 	testiSelector.owlCarousel({
-        loop: true,
-        autoplay: true,
+        loop:false, /* Was originally loop:true */
+        autoplay:false, /* Was originally autoplay:true */
         smartSpeed: 500,
         nav: false,
         responsive:{
@@ -103,7 +103,7 @@ $('#app_carousel').owlCarousel({
         $('.subscribe_form').ajaxChimp({
             language: 'es',
             callback: mailchimpCallback,
-            url: "//alexatheme.us14.list-manage.com/subscribe/post?u=48e55a88ece7641124b31a029&amp;id=361ec5b369"
+            url: "https://nav-labs.us18.list-manage.com/subscribe/post?u=69e02de1c608bb5eed9a9be94&amp;id=4287a8011c"
         });
     }
 

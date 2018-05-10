@@ -41,13 +41,22 @@
         max-width: 100%;
     }
 
+		.leadership_wrap{ padding: 0; }
+    .leadership_mock img{
+        width: 100%;
+    }
+    .leadership_list span.circle{ display: none; }
+    .owl-nav div{
+        left: 10px;
+    }
+
 }
 /* ---- End of max-width 992px CSS ---- */
 
 
 /* ---- Start of min-width 480px and max-width 768px CSS ---- */
 @media all and (min-width: 480px) and (max-width: 768px) {
-	
+
 }
 /* ---- End of min-width 480px and max-width 768px CSS ---- */
 
@@ -110,7 +119,7 @@
 @media all and (max-width: 580px) {
     .testimonial_section,
     .screenshot_section{
-        width: 420px;
+        width: 380px;
         margin: 0 auto;
     }
 }
@@ -121,7 +130,7 @@
 @media all and (max-width: 420px) {
     .testimonial_section,
     .screenshot_section{
-        width: 360px;
+        width: 300px;
         margin: 0 auto;
     }
 	.btn_group a {
@@ -129,3 +138,51 @@
     }
 }
 /* ---- End of max-width 380px CSS ---- */
+
+/* Mobile Responsive */
+@media screen and (max-width: 500px) {
+	/* Hide Right Sidebar Nav */
+  #pp-nav {
+    visibility: hidden;
+  }
+	/* Change carousel nav arrows to white to show better on images */
+	.owl-nav div{
+		color: #fff;
+	}
+
+	.feature_wrap .section_heading {
+		margin-top: 75px;
+		margin-bottom: 0px;
+	}
+	.leadership_wrap .section_heading {
+		margin-top: 75px;
+		margin-bottom: 0px;
+	}
+
+	.leadership_list .col-sm-12 {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+}
+
+/* Owl Carousel images */
+/* .owlCarousel {
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        500:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+} */

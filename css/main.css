@@ -516,66 +516,37 @@ label:focus {
 }
 
 /* ==========================================================================
-   Screenshot Section
+   Leadership Section
    ========================================================================== */
-.app_carousel{}
-.app_carousel .shot_item{}
-.shot_item .screen_thumb{
-    overflow: hidden;
-    position: relative;
-}
-.shot_item .screen_thumb img{
-    width: 100%;
-}
-.shot_item .screen_thumb figcaption{
-    background-color: rgba(255,255,255,0.6);
-    display: block;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0;
-}
-.shot_item .screen_thumb:hover figcaption{
-    opacity: 1;
-}
-.shot_item .screen_thumb figcaption a{
-    background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #e55b5f 0%, #ba3236 100%) repeat scroll 0 0;
-    background: rgba(0, 0, 0, 0) linear-gradient(to right, #e55b5f 0%, #ba3236 100%) repeat scroll 0 0;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    display: block;
-    font-size: 18px;
-    color: #fff;
-    border-radius: 2px;
-    margin: 0 auto;
-}
-.shot_item .screen_thumb figcaption a:hover{
-    box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.25);
-}
-.owl-nav div{
-    font-size: 25px;
-    color: #777;
-    line-height: 30px;
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: -40px;
-    opacity: 0.5;
-    top: calc(50% - 15px);
-    transition: opacity 0.3s ease-in-out;
-}
-.owl-nav div.owl-next{
-    left: auto;
-    right: -40px;
-}
-.owl-nav div:hover{
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-}
+	 .leadership_section{}
+	 .leadership_mock{
+			 padding: 270px 0;
+	 }
+	 .leadership_wrap{
+	     padding: 92px 0;
+	 }
+	 .leadership_list li{
+	     padding: 50px;
+	 }
+	 .leadership_list li img{
+	     height: 75px;
+	     width: 75px;
+	     position: absolute;
+	     left: 0;
+	     top: 0px;
+	 }
+	 /* .leadership_list li img.resize{
+	     height: auto;
+	     width: auto;
+	     position: absolute;
+	 } */
+	 .leadership_list .list_item{
+	     padding-left: 100px;
+			 padding-right: 0px;
+			 height: 90px;
+	     position: relative;
+			 display: block;
+	 }
 
 /* ==========================================================================
    Testimonial Section
@@ -633,9 +604,9 @@ label:focus {
 .dl_sec .pp-tableCell{ z-index: 1; }
 .download_section{}
 .download_mock{
-    background-image: url(../img/mockup-5.png);
+    background-image: url(../img/MacBook_Etherscan/MacBook_Etherscan_scaled.png);
     background-repeat: no-repeat;
-    background-position: right bottom;
+		background-position: 90% center;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -720,7 +691,7 @@ label:focus {
 }
 .subscription-success,
 .subscription-error{
-    color: #fff;
+    color: #777;
 }
 .social_link{
     text-align: center;
