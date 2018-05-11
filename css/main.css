@@ -518,34 +518,51 @@ label:focus {
 /* ==========================================================================
    Leadership Section
    ========================================================================== */
-	 .leadership_section{}
-	 .leadership_mock{
-			 padding: 270px 0;
+	 .leadership_items{
+	     margin: 0 auto;
 	 }
-	 .leadership_wrap{
-	     padding: 92px 0;
+	 .leadership_item{
+	     padding: 15px;
+	     text-align: center;
 	 }
-	 .leadership_list li{
-	     padding: 50px;
-	 }
-	 .leadership_list li img{
-	     height: 75px;
-	     width: 75px;
-	     position: absolute;
-	     left: 0;
-	     top: 0px;
-	 }
-	 /* .leadership_list li img.resize{
-	     height: auto;
-	     width: auto;
-	     position: absolute;
-	 } */
-	 .leadership_list .list_item{
-	     padding-left: 100px;
-			 padding-right: 0px;
-			 height: 90px;
+	 .leadership_item figure{
+	     width: 90px;
+	     height: 90px;
+	     padding: 5px;
+	     margin: 0 auto 15px;
 	     position: relative;
-			 display: block;
+	 }
+	 .leadership_item figure img{
+	     border-radius: 50px;
+	     width: 100%;
+	 }
+	 .leadership_item h4{
+	     font-weight: 600;
+	     margin: 15px 0 10px;
+	 }
+	 .leadership_item p{}
+
+	 .leadership_items .owl-dots{
+	     display: block;
+	     text-align: center;
+	 }
+	 .leadership_items .owl-dots .owl-dot{
+	     background-color: #bbb;
+	     display: inline-block;
+	     width: 10px;
+	     height: 10px;
+	     -moz-border-radius: 50%;
+	     -webkit-border-radius: 50%;
+	     -o-border-radius: 50%;
+	     border-radius: 50%;
+	     margin: 0 3px;
+	     -webkit-transform: scale(0.6);
+	     transform: scale(0.6);
+	     transition: all 0.5s ease-in-out;
+	 }
+	 .leadership_items .owl-dots .owl-dot.active{
+	     background-color: #777;
+	     transition: all 0.5s ease-in-out;
 	 }
 
 /* ==========================================================================

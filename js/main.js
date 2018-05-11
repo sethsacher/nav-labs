@@ -32,34 +32,29 @@
         }
     });
 
-/*=========================================================================
-	Screenshot Carousel Active
-=========================================================================*/
-$('#app_carousel').owlCarousel({
-        loop:false, /* Was originally loop:true */
-        margin: 20,
-        autoplay: false,
-        responsiveClass:true,
-        smartSpeed: 500,
-        dots: false,
-        nav:true,
-        navText: ['<i class="ti-arrow-left"></i>', '<i class="ti-arrow-right"></i>'],
-        responsive:{
-            0:{
-                items: 1,
-                autoplay: false,
-                margin: 0
-            },
-            600:{
-                items: 3,
-                autoplay: false
-            },
-            1000:{
-                items: 6
-            }
-        }
+  /*=========================================================================
+      Leadership Carousel
+  =========================================================================*/
+      var testiSelector = $('#leadership_carousel');
+  	testiSelector.owlCarousel({
+          loop:false, /* Was originally loop:true */
+          autoplay:false, /* Was originally autoplay:true */
+          smartSpeed: 500,
+          nav: false,
+          responsive:{
+              0:{
+                  items: 1
+              },
+              400:{
+                  items: 2,
+                  autoplay: false
+              },
+              600:{
+                  items: 3
+              }
+          }
 
-    });
+      });
 
 /*=========================================================================
     Testimonial Carousel
