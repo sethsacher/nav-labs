@@ -163,6 +163,11 @@
 		padding-top: 0px;
 		padding-bottom: 0px;
 	}
+
+	.feature_list li {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
 }
 
 /* Owl Carousel images */
