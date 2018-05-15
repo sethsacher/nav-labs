@@ -650,6 +650,36 @@ label:focus {
 }
 
 /* ==========================================================================
+   Careers Section
+   ========================================================================== */
+.careers_section{}
+.careers_mock{
+    background-image: url(../img/logo_careers.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 115px;
+    left: 0;
+}
+.careers_content{
+    padding: 150px 0;
+    overflow: hidden;
+}
+.careers_content .check_list{
+    line-height: 35px;
+}
+/* Display items in two columns */
+/* .careers_content .check_list li{
+    float: left;
+    width: 50%;
+} */
+.careers_content .check_list li i{
+    color: #42e565;
+    margin-right: 5px;
+}
+
+/* ==========================================================================
    Subscribe Section
    ========================================================================== */
 .subscribe_section{}
