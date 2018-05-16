@@ -12,7 +12,7 @@
 	Pagepiling Active
 =========================================================================*/
     $('#pagepiling').pagepiling({
-        direction: 'horizontal',
+        direction: 'vertical',
         menu: '#menu',
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'careers', 'page7'],
         sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff'],
